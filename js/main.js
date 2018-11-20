@@ -1,4 +1,4 @@
-import THREE from "three.min.js";
+// import THREE from "three.min.js";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
