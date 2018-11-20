@@ -13,6 +13,17 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 document.body.appendChild(renderer.domElement);
 
+// Create cube
+const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
+const boxMaterial = new THREE.MeshBasicMaterial({
+  color: 0xffffff,
+  wireframe: false
+});
+const cube = new THREE.Mesh(boxGeometry, boxMaterial);
+scene.add(cube);
+
+camera.position.z = 3;
+
 window.addEventListener("resize", () => {
   const width = window.innerWidth;
   const height = window.innerHeight;
