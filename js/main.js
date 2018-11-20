@@ -44,7 +44,7 @@ const boxMaterials = [
   })
 ];
 
-const boxMaterial = new THREE.MeshBasicMaterial(boxMaterials);
+const boxMaterial = new THREE.MeshFaceMaterial(boxMaterials);
 const cube = new THREE.Mesh(boxGeometry, boxMaterial);
 scene.add(cube);
 
